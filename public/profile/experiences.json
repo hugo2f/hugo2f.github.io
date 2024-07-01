@@ -1,33 +1,36 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
-            "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
-            ],
-            "dateText": "06/20XX – Present"
-        },
-        {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
+            "title": "Software Engineer Intern",
+            "subtitle": "Black Lake Technologies",
             "workType": "Internship",
             "workDescription": [
-                "Worked on abc."
+                "Developed a Python program to automate prompt engineering for specified tasks based on a success metric",
+                "Built and fine-tuned a Q&A chatbot on Lark’s experimental AI platform Aily, integrated into manufacturing digitalization software used in over 20,000 factories"
             ],
-            "dateText": "01/20XX – 05/20XX"
+            "dateText": "Jun 2024 – Aug 2024"
         },
         {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
+            "title": "Software Engineer Intern",
+            "subtitle": "Greenbox Storage",
+            "workType": "Internship",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Developed an internal app to track reservation statuses, using Redux to sync real-time data across instances, and implemented a fail-safe for uploading item storage information",
+                "Constructed an automatic Twilio messaging system in Node.js to notify clients about item storage appointments, serving over 1,000 clients with more than 5,000 items stored",
+                "Created a dashboard in React to interactively visualize trends in revenue and user statistics, allowing customized sorting, filtering, and downloading of data"
             ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "Apr 2023 - Aug 2023"
+        },
+        {
+            "title": "Software Development Intern",
+            "subtitle": "4Paradigm",
+            "workType": "Internship",
+            "workDescription": [
+                "Conducted quality assurance for the Intelligent Decision Platform by designing comprehensive edge cases, load testing with JMeter, and verifying the platform’s data query function, improving speed and accuracy by 20%",
+                "Automated the API feature and performance testing of the Intelligent Decision Platform through Python asyncio methods, reducing the preprocessing and uploading time for five million lines of data by 30%",
+                "Updated the tagging and sorting features of a supply chain data platform for Yum China, built with React"
+            ],
+            "dateText": "Dec 2022 - Mar 2023"
         }
     ]
 }

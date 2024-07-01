@@ -1,11 +1,11 @@
 {
-  "short_name": "Mayank Agarwal",
-  "name": "Mayank Agarwal - Portfolio",
+  "short_name": "Hugo Fang",
+  "name": "Hugo Fang - Portfolio",
   "icons": [
     {
-      "src": "images/logo.png",
-      "type": "image/png",
-      "sizes": "425x225"
+      "src": "images/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "400x400"
     }
   ],
   "start_url": ".",
