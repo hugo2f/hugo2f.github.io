@@ -1,16 +1,19 @@
 {
     "social": [
         {
-            "network" : "linkedin",
-            "href": "https://linkedin.com/"
+            "network": "linkedin",
+            "href": "https://www.linkedin.com/in/hugo-fang-791627230/"
         },
         {
-            "network" : "github",
-            "href": "https://github.com/mayankagarwal09"
+            "network": "github",
+            "href": "https://github.com/hugo2f"
         },
         {
-            "network" : "email",
-            "href": "mailto:test@test.com"
+            "network": "email",
+            "href": "mailto:hugo.fang.25@dartmouth.edu"
+        },
+        {
+            "href": "https://steamcommunity.com/id/whyusername"
         }
     ]
 }
