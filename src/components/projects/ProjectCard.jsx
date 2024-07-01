@@ -70,7 +70,12 @@ const ProjectCard = (props) => {
           ))}
         </Card.Body>
         {project.tags && (
-          <Card.Footer style={{ backgroundColor: theme.cardFooterBackground }}>
+          <Card.Footer
+            style={{
+              ...styles.cardStyle,
+              backgroundColor: theme.cardFooterBackground,
+            }}
+          >
             {project.tags.map((tag) => (
               <Badge
                 key={tag}

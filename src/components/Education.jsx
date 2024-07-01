@@ -59,9 +59,11 @@ function Education(props) {
                   cardBgColor: theme.chronoTheme.cardBgColor,
                   cardForeColor: theme.chronoTheme.cardForeColor,
                   titleColor: theme.chronoTheme.titleColor,
+                  titleColorActive: theme.chronoTheme.titleColor,
                 }}
               >
-                <div className="chrono-icons">
+                {/* removed icons from education timeline since they're too small */}
+                {/* <div className="chrono-icons">
                   {data.education.map((education) => (education.icon ? (
                     <img
                       key={education.icon.src}
@@ -69,12 +71,12 @@ function Education(props) {
                       alt={education.icon.alt}
                     />
                   ) : null))}
-                </div>
+                </div> */}
               </Chrono>
             </Container>
           </div>
         </Fade>
-      ) : <FallbackSpinner /> }
+      ) : <FallbackSpinner />}
     </>
   );
 }

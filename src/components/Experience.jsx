@@ -64,7 +64,7 @@ function Experience(props) {
                       style={styles.itemStyle}
                       bodyContainerStyle={{ color: theme.color }}
                     >
-                      <h2 className="item-title">
+                      <h2 className="item-title" style={{ marginTop: '-8px' }}>
                         {item.title}
                       </h2>
                       <div style={styles.subtitleContainerStyle}>
@@ -72,11 +72,11 @@ function Experience(props) {
                           {item.subtitle}
                         </h4>
                         {item.workType && (
-                        <h5 style={styles.inlineChild}>
-                    &nbsp;·
-                          {' '}
-                          {item.workType}
-                        </h5>
+                          <h5 style={styles.inlineChild}>
+                            &nbsp;·
+                            {' '}
+                            {item.workType}
+                          </h5>
                         )}
                       </div>
                       <ul style={styles.ulStyle}>
@@ -100,7 +100,7 @@ function Experience(props) {
               </Timeline>
             </Container>
           </div>
-        ) : <FallbackSpinner /> }
+        ) : <FallbackSpinner />}
     </>
   );
 }
