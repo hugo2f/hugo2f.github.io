@@ -32,7 +32,7 @@ function MainApp() {
                     key={route.headerTitle}
                     path={route.path}
                     component={() => (
-                      <SectionComponent header={route.headerTitle} />
+                      <SectionComponent style={{ marginTop: '80px' }} header={route.headerTitle} />
                     )}
                   />
                 );

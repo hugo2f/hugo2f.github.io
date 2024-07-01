@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
@@ -7,7 +7,10 @@ import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
   nameStyle: {
-    fontSize: '5em',
+    fontSize: '4em',
+  },
+  subHeader: {
+    fontSize: '1.5em',
   },
   inlineChild: {
     display: 'inline-block',
@@ -38,14 +41,15 @@ function Home() {
       <div style={styles.mainContainer}>
         <h1 style={styles.nameStyle}>{data?.name}</h1>
         <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-          <Typewriter
+          {/* <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2> */}
+          <div style={styles.subHeader}>{data?.roles.join(' / ')}</div>
+          {/* <Typewriter
             options={{
               loop: true,
               autoStart: true,
               strings: data?.roles,
             }}
-          />
+          /> */}
         </div>
         <Social />
       </div>

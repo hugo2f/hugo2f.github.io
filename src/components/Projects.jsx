@@ -31,35 +31,39 @@ const Projects = (props) => {
       .then((res) => setData(res))
       .catch((err) => err);
   }, []);
-  const numberOfItems = showMore && data ? data.length : 6;
+
+  // Determine the number of items to display
+  const numberOfItems = showMore && data ? data.projects.length : 6;
+
   return (
     <>
       <Header title={header} />
-      {data
-        ? (
-          <div className="section-content-container">
-            <Container style={styles.containerStyle}>
-              <Row xs={1} sm={1} md={2} lg={3} className="g-4">
-                {data.projects?.slice(0, numberOfItems).map((project) => (
-                  <Fade key={project.title}>
-                    <ProjectCard project={project} />
-                  </Fade>
-                ))}
-              </Row>
+      {data ? (
+        <div className="section-content-container">
+          <Container style={styles.containerStyle}>
+            <Row xs={1} sm={1} md={2} lg={3} className="g-4">
+              {data.projects.slice(0, numberOfItems).map((project) => (
+                <Fade key={project.title}>
+                  <ProjectCard project={project} />
+                </Fade>
+              ))}
+            </Row>
 
-              {!showMore
-                && (
-                <Button
-                  style={styles.showMoreStyle}
-                  variant={theme.bsSecondaryVariant}
-                  onClick={() => setShowMore(true)}
-                >
-                  show more
-                </Button>
-                )}
-            </Container>
-          </div>
-        ) : <FallbackSpinner /> }
+            {/* display "Show more" button if there are more than 6 items */}
+            {data.projects.length > 6 && !showMore && (
+              <Button
+                style={styles.showMoreStyle}
+                variant={theme.bsSecondaryVariant}
+                onClick={() => setShowMore(true)}
+              >
+                Show more
+              </Button>
+            )}
+          </Container>
+        </div>
+      ) : (
+        <FallbackSpinner />
+      )}
     </>
   );
 };

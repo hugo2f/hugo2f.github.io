@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Container, Col, Row } from 'react-bootstrap';
+// import { Container, Col, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import Header from './Header';
@@ -51,14 +52,15 @@ function About(props) {
           {data
             ? (
               <Fade>
-                <Row>
+                <div style={styles.introTextContainer}>{parseIntro(data.about)}</div>
+                {/* <Row>
                   <Col style={styles.introTextContainer}>
                     {parseIntro(data.about)}
                   </Col>
                   <Col style={styles.introImageContainer}>
                     <img src={data?.imageSource} alt="profile" />
                   </Col>
-                </Row>
+                </Row> */}
               </Fade>
             )
             : <FallbackSpinner />}
