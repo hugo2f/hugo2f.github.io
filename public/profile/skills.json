@@ -1,7 +1,7 @@
 {
-    "intro": "These are some of the major languages, technologies, tools and platforms I have worked with.\n",
-    "skills": [{
-     
+    "intro": "These are some of the major languages, technologies, tools and platforms I have worked with.\nPerhaps one day, I'll be skillful enough to say this list is not exhaustive.",
+    "skills": [
+        {
             "title": "Languages",
             "items" : [
                 {

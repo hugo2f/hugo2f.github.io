@@ -3,17 +3,12 @@
         {
             "title": "Sep 2021 - Jun 2025",
             "cardTitle": "Bachelor's, Computer Science",
-            "cardSubtitle":"Dartmouth College",
-            "cardDetailedText": "Major GPA: 4.0/4.0",
-            "icon" : {
-                "src": "images/education/lorem-ipsum.png"
-            }
+            "cardSubtitle": "Dartmouth College"
         },
         {
             "title": "June 2021",
             "cardTitle": "High School",
-            "cardSubtitle":"Shanghai High School International Division",
-            "cardDetailedText": "IB 44/45"
+            "cardSubtitle": "Shanghai High School International Division"
         }
     ]
 }
