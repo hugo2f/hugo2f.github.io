@@ -1,6 +1,20 @@
 {
     "projects" : [
         {
+            "title": "Prompt iteration",
+            "bodyText": "- An app to help with prompt engineering\n - Compares the most recent pair of prompts/responses\n - Suggests improvements to the prompt",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/hugo2f/prompt-iteration"
+                }
+            ],
+            "tags" : [
+                "Streamlit",
+                "Python"
+            ]
+        },
+        {
             "title": "Discord party bot",
             "bodyText": "- A bot that brings fun to your Discord server\n - Greets people in voice channels, plays music, and sends annoucements\n - Translates messages (if it feels like it)",
             "links": [
