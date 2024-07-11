@@ -2,7 +2,7 @@
     "projects" : [
         {
             "title": "Prompt iteration",
-            "bodyText": "- An app to help with prompt engineering\n - Compares the most recent pair of prompts/responses\n - Suggests improvements to the prompt",
+            "bodyText": "- An app to help with prompt engineering\n - Compares the two most recent prompt/response pairs\n - Suggests improvements to the prompt",
             "links": [
                 {
                     "text": "GitHub",
