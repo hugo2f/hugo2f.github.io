@@ -1,7 +1,7 @@
 {
     "sections": [
         {
-            "component": "About",
+            "component": "About/About",
             "path": "/about",
             "headerTitle": "About"
         },
@@ -11,17 +11,17 @@
             "headerTitle": "Skills"
         },
         {
-            "component": "Education",
+            "component": "Education/Education",
             "path": "/education",
             "headerTitle": "Education"
         },
         {
-            "component": "Experience",
+            "component": "Experience/Experience",
             "path": "/experience",
             "headerTitle": "Experience"
         },
         {
-            "component": "Projects",
+            "component": "Projects/Projects",
             "path": "/projects",
             "headerTitle": "Projects"
         }
