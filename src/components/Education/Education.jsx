@@ -4,10 +4,10 @@ import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
-import Header from './Header';
-import FallbackSpinner from './FallbackSpinner';
-import '../css/education.css';
+import endpoints from '../../constants/endpoints';
+import Header from '../Header';
+import FallbackSpinner from '../FallbackSpinner';
+import './styles.css';
 
 function Education(props) {
   const theme = useContext(ThemeContext);

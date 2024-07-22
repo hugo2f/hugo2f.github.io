@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-// import { Container, Col, Row } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
-import Header from './Header';
-import endpoints from '../constants/endpoints';
-import FallbackSpinner from './FallbackSpinner';
+import Header from '../Header';
+import endpoints from '../../constants/endpoints';
+import FallbackSpinner from '../FallbackSpinner';
+import './styles.css';
 
 const styles = {
   introTextContainer: {
@@ -17,11 +17,23 @@ const styles = {
     fontSize: '1.2em',
     fontWeight: 500,
   },
-  introImageContainer: {
-    margin: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    display: 'flex',
+  masonryContainer: {
+    columnCount: 4,
+    columnGap: '15px',
+    marginTop: 20,
+  },
+  masonryItem: {
+    breakInside: 'avoid',
+    marginBottom: '10px',
+    overflow: 'visible',
+  },
+  image: {
+    width: '100%',
+    height: 'auto',
+    transition: 'transform 0.3s ease-in-out',
+  },
+  imageHover: {
+    transform: 'scale(2)',
   },
 };
 
@@ -33,6 +45,24 @@ function About(props) {
     <ReactMarkdown
       children={text}
     />
+  );
+
+  const imageDirectory = 'images/about/';
+
+  const renderImages = (images) => (
+    <div style={styles.masonryContainer}>
+      {images.map((image) => (
+        <div key={image} style={styles.masonryItem}>
+          <img
+            src={imageDirectory + image}
+            alt={image}
+            // style={{ ...styles.image, ':hover': styles.imageHover }}
+            className="image"
+            loading="lazy"
+          />
+        </div>
+      ))}
+    </div>
   );
 
   useEffect(() => {
@@ -53,14 +83,8 @@ function About(props) {
             ? (
               <Fade>
                 <div style={styles.introTextContainer}>{parseIntro(data.about)}</div>
-                {/* <Row>
-                  <Col style={styles.introTextContainer}>
-                    {parseIntro(data.about)}
-                  </Col>
-                  <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
-                  </Col>
-                </Row> */}
+                <div style={styles.introTextContainer}>{parseIntro(data.about2)}</div>
+                {data.images && renderImages(data.images)}
               </Fade>
             )
             : <FallbackSpinner />}

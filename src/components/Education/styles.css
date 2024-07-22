@@ -1,4 +1,4 @@
-/* .vertical {
+.vertical {
     justify-content: left;
 }
 
@@ -16,6 +16,6 @@
     div.vertical-item-row > div:nth-child(3) {
         width: 15% !important;
     }
-} */
+}
 
 /* TODO: perhaps no longer needed */

@@ -3,10 +3,10 @@ import { Container, Row, Button } from 'react-bootstrap';
 import { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
-import Header from './Header';
-import endpoints from '../constants/endpoints';
-import ProjectCard from './projects/ProjectCard';
-import FallbackSpinner from './FallbackSpinner';
+import Header from '../Header';
+import endpoints from '../../constants/endpoints';
+import ProjectCard from './ProjectCard';
+import FallbackSpinner from '../FallbackSpinner';
 
 const styles = {
   containerStyle: {
