@@ -1,5 +1,11 @@
 {
-    "about": "I like figuring out how things work, and making cool things with them.",
-    "imageSource": "images/about/profile.png"
-    
+    "about": "I like figuring out how things work, and doing cool things with them. That's probably why I like programming and magic tricks.",
+    "images": [
+        "1.jpeg",
+        "2.JPG",
+        "3.jpeg",
+        "4.jpeg",
+        "5.jpeg"
+    ],
+    "about2": "I'm not the best with words. A picture is worth a thousand words though, so here are some pictures to entertain you instead :D"
 }
