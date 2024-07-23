@@ -1,8 +1,8 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import FallbackSpinner from './components/FallbackSpinner';
-import NavBarWithRouter from './components/NavBar';
-import Home from './components/Home';
+import FallbackSpinner from './pages/FallbackSpinner';
+import NavBarWithRouter from './pages/NavBar';
+import Home from './pages/Home';
 import endpoints from './constants/endpoints';
 
 function MainApp() {
@@ -26,7 +26,7 @@ function MainApp() {
             <Route exact path="/" component={Home} />
             {data
               && data.sections.map((route) => {
-                const SectionComponent = React.lazy(() => import('./components/' + route.component));
+                const SectionComponent = React.lazy(() => import('./pages/' + route.page));
                 return (
                   <Route
                     key={route.headerTitle}
