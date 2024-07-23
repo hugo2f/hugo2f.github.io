@@ -6,7 +6,7 @@ import Fade from 'react-reveal';
 import Header from '../Header';
 import endpoints from '../../constants/endpoints';
 import FallbackSpinner from '../FallbackSpinner';
-import './styles.css';
+import './About.css';
 
 const styles = {
   introTextContainer: {
@@ -56,7 +56,6 @@ function About(props) {
           <img
             src={imageDirectory + image}
             alt={image}
-            // style={{ ...styles.image, ':hover': styles.imageHover }}
             className="image"
             loading="lazy"
           />

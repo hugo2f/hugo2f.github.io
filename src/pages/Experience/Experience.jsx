@@ -8,7 +8,7 @@ import Fade from 'react-reveal';
 import Header from '../Header';
 import endpoints from '../../constants/endpoints';
 import FallbackSpinner from '../FallbackSpinner';
-import './styles.css';
+// import './Experience.css';
 
 const styles = {
   ulStyle: {

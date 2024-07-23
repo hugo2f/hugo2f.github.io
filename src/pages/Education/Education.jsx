@@ -7,7 +7,7 @@ import { ThemeContext } from 'styled-components';
 import endpoints from '../../constants/endpoints';
 import Header from '../Header';
 import FallbackSpinner from '../FallbackSpinner';
-import './styles.css';
+import './Education.css';
 
 function Education(props) {
   const theme = useContext(ThemeContext);

@@ -28,7 +28,7 @@ function Social() {
     <div className="social">
       {data ? data.social.map((social) => (
         <SocialIcon
-          key={social.network}
+          key={social.href}
           style={styles.iconStyle}
           url={social.href}
           network={social.network}
