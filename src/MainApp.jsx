@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import FallbackSpinner from './pages/FallbackSpinner';
 import NavBarWithRouter from './pages/NavBar';
 import Home from './pages/Home';
@@ -21,7 +21,7 @@ function MainApp() {
     <div className="MainApp">
       <NavBarWithRouter />
       <main className="main">
-        <Routes>
+        <Switch>
           <Suspense fallback={<FallbackSpinner />}>
             <Route exact path="/" component={Home} />
             {data
@@ -38,7 +38,7 @@ function MainApp() {
                 );
               })}
           </Suspense>
-        </Routes>
+        </Switch>
       </main>
     </div>
   );
